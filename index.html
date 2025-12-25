@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
@@ -13,15 +14,17 @@
 
 </ul>
 
+<p class="alert success js-alert">To many results!</p>
+
 <template id="countries-templ">
         <div class="card">
             <div class="card-img-top">
-                <img src="{{sprites.front_default}}" alt="{{name}}">
+                <img src= `${{flags.png}}`  alt= `{{name}}` >
             </div>
             <div class="card-body">
-                <h2 class="card-title">name: {{name}}</h2>
+                <h2 class="card-title">name: {{name.common}}</h2>
                 <p class="card-text">capital: {{capital}}</p>
-                <p class="card-text">Зріст: {{lenguages}}</p>
+                <p class="card-text">population: {{population}}</p>
             </div>
         </div>
     </template>
